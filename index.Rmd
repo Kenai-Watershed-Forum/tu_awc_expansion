@@ -1,6 +1,6 @@
 --- 
-title: "A Minimal Book Example"
-author: "Yihui Xie"
+title: "Kenai Peninsula Chapter of Trout Unlimited Embrace-a-Stream Project: Expanding and Corroborating the Known Extent of Anadromous Waters Throughout the Kenai Peninsula"
+author: "Benjamin Meyer, Kenai Watershed Forum"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
@@ -8,25 +8,95 @@ documentclass: book
 bibliography: [book.bib, packages.bib]
 biblio-style: apalike
 link-citations: yes
-github-repo: rstudio/bookdown-demo
+github-repo: 'https\://bookdown.org/kwfwqx/tu_awc_expansion/'
 description: "This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook."
 ---
 
-# Prerequisites
+# Introduction
 
-This is a _sample_ book written in **Markdown**. You can use anything that Pandoc's Markdown supports, e.g., a math equation $a^2 + b^2 = c^2$.
+```{r , include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = F, message = F)
 
-The **bookdown** package can be installed from CRAN or Github:
+# clear environment
+rm(list=ls())
 
-```{r eval=FALSE}
-install.packages("bookdown")
-# or the development version
-# devtools::install_github("rstudio/bookdown")
+# load packages
+library(bookdown)
+library(tinytex)
+library(tidyverse)
+library(googlesheets4)
+library(lubridate)
+library(readr)
+library(readxl)
+library(writexl)
+library(hms)
+library(plotly)
+library(DT)
+library(xlsx)
+library(leaflet)
+library(DT)
+library(ggpubr)
+library(plotrix)
+library(packrat)
+library(foreign)
+
+# set plotting themes
+
+## geom_col plots theme
+col_theme <- theme(axis.title = element_text(size = 14, face = "bold"),
+                   strip.text = element_text(size = 14, face = "bold"),
+                   legend.title = element_text(size = 14, face = "bold"),
+                   legend.text = element_text(size = 14),
+                   axis.text = element_text(size = 14))
+
+## geom_points plots theme
+points_theme <- theme(axis.title = element_text(size = 14, face = "bold"),
+                   strip.text = element_text(size = 14, face = "bold"),
+                   legend.title = element_text(size = 14, face = "bold"),
+                   legend.text = element_text(size = 14),
+                   axis.text = element_text(size = 11, face = "bold"),
+                   title = element_text(size = 18))
+
+# function to exclude multiple items per column
+'%ni%' <- Negate('%in%')
+
+# clarify select function
+select <- dplyr::select
 ```
 
-Remember each Rmd file contains one and only one chapter, and a chapter is defined by the first-level heading `#`.
+```{r juv-salmon, echo = F, fig.cap = "Juvenile Coho Salmon", out.height=300, out.height=300}
 
-To compile this example to PDF, you need XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): <https://yihui.name/tinytex/>.
+# put photo of juv salmon here, pics on icloud from 8/31/2021
+
+# knitr::include_graphics('images/example_TIR_img.jpg')
+
+```
+
+This document contains preliminary data and analysis related to Alaska Sustainable Salmon Fund project #54014, "Expanding and Corroborating the Known Extent of Anadromous Waters Throughout the Kenai Peninsula."
+
+## Synopsis
+
+The Kenai Peninsula's watersheds are significant producers of Pacific salmon. Critical to Alaska's economic and cultural wellbeing, these salmon support fisheries both inland and throughout Cook Inlet. This project is documenting anadromous spawning, rearing, and migrating salmon in order to increase the anadromous waters recognized in the Alaska Department of Fish and Game's (ADF&G's) Catalog of Waters Important for the Spawning, Rearing or Migration of Anadromous Fishes (AWC). The AWC is Alaska's most powerful tool for regulating, protecting, and conserving anadromous fish habitat.
+
+
+## Introduction
+
+Salmon are intrinsic to the cultural and economic wellbeing of Alaska, but cannot persist on the landscape without healthy habitat. Through strategic conservation efforts, riparian and instream habitat can continue to maintain salmon populations as well as transport marine-derived nutrients; maintain hydrology; provide contiguous green space for recreation and access, cultural resource protection, plant dispersal, and wildlife movement; connect existing protected areas; and provide refuge during a rapidly changing climate. In recognition of the importance of protecting anadromous fish habitat, the State of Alaska enacted Alaska Statute 16.05.871, Protection of Fish and Game, which requires the state to list rivers, lakes, and streams important for the spawning, rearing, or migration of anadromous fish, while also requiring the prior approval of construction or use of said waterbody that may result in adverse effects on salmon populations. In response, ADF&G began overseeing the AWC whose data is now publicly hosted online for resource managers and interested members of the public to utilize.
+
+Each year, ADF&G solicits anadromous stream nominations from statewide efforts from the previous year. Once accepted, these nominations are incorporated into the AWC and its associated atlas. To date, the AWC includes nearly 20,000 anadromous streams, rivers, and lakes, though it is widely understood that this number represents a fraction of anadromous waterbodies throughout the state. In response, the Kenai Watershed Forum (KWF) has developed an updated internal, regional database based on Geographic Information Systems (GIS) analysis, field visits, and local knowledge to identify stretches of streams, rivers, and lakes that may be critical to spawning, rearing, and migration of anadromous fish but are not listed in the AWC. Throughout this project, KWF will utilize this database to strategically identify fish trapping sites to collect critical fish and habitat data for AWC nomination submissions. Site prioritization will be conducted based on criteria including the increase in protected anadromous fish habitat and alignment of trapping priorities with local agency and partnership goals. These are described in greater detail in the methods section.
+
+KWF has been conducting annual fish trapping events since 2005. A brief update to its database will be conducted prior to project commencement using the newest AWC shapefile from ADF&G so as to avoid trapping in areas that were recently assessed. Mandatory training will also be conducted by the Principal Investigator for all assisting staff and volunteers, including but not limited to identifying ideal anadromous fish habitat; responsible deployment and retrieval of minnow traps; juvenile and adult fish identification; data collection and recording while in the field; and safe travel in bear country. KWF will coordinate with local agency partners to ensure that trapping isn't replicated in the same areas throughout each summer and, as schedules allow, will also partner with local biologists from ADF&G during these trapping efforts.
+
+Since KWF began fish trapping, professional support has been provided by the Kenai Peninsula Borough, the Kenaitze Indian Tribe (KIT), ADF&G, and the United States Fish and Wildlife Service (USFWS), of which KIT, USFWS, and ADF&G have provided financial support for these efforts. ADF&G's most recent contribution was through AKSSF project 44153, Fish Trapping on the Kenai Peninsula. KWF also provides in-kind fish trapping support to local ADF&G biologists each summer on an as-needed basis. This support helps biologists with pre-project habitat assessments as well as with the expansion of the AWC throughout the Kenai Peninsula. Through the use of more elaborate protocol, the expansion of KWF's fish trapping database, and collaboration with local agency representatives, this project will expand upon KWF's previous fish trapping efforts.
+
+KWF will also leverage fish trapping fieldwork to gather additional data for other local anadromous habitat-related efforts, including invasive elodea surveys funded by the Kenai Peninsula Cooperative Weed Management Area (KP-CWMA). Elodea is an aggressively invasive aquatic plant with the potential for substantial negative effects on anadromous habitat.
+
+
+## Objectives
+
+-   Submit nominations to increase anadromous stream, river, lake, and wetland coverage in the AWC and corresponding atlas
+
+-   Revise or corroborate outdated AWC and atlas data, particularly on Kenai River tributaries experiencing increases in zinc concentrations as well as priority corridors identified by the Kenai Mountains to Sea partnership
 
 ```{r include=FALSE}
 # automatically create a bib database for R packages
