@@ -79,13 +79,11 @@ sample_events <- read_sheet(url, sheet =  "A_Sample_Event") %>%
   select(-QC1,-QC2,-data_entry,-notes,-crew)
 
 ### fish count
-fish_dat <- read_sheet(url, sheet = "F_Fish_ID") 
-
-# %>%
-  # retain only TU events
- # filter(project_org == "TU")
-
-# use date/site match to include fish only at TU events
+fish_dat <- read_sheet(url, sheet = "F_Fish_ID") %>%
+  select(-QC1,-QC2,-data_entry,-notes)  %>%
+  
+  # retain only TU events by using an inner join to only dates when TU events occurred. Assumes that no other simultaneous fieldwork was done elsewhere that day
+  inner_join(sample_events, by = c("site_depart_date","site"))
 
 
 
@@ -162,7 +160,7 @@ Since initiation of fieldwork in summer 2021:
 
 -   Over course of `r n_days` fieldwork days in summer 2021, KPTU in collaboration with KWF have conducted a total of `r n_events` sampling events at `r n_sites_total` unique sites, including the training event. See the interactive project map in the Methods section ("[Site selection](##%20Site%20selection)") for a current map of where and when sampling events have occurred.
 
--   Table \@ref(tab:site-visits) summarises total samping events by individual site. We typically sampled a site only one time each in summer 2021, with the exception of two sites: "Lower Soldotna Creek", and "Soldotna Creek Parcel." Both of these sites are highlighted in further detail in the "Discussion" section.
+-   Table \@ref(tab:site-visits) summarises total samping events by individual site. We typically sampled a site only one time each in summer 2021.
 
 -   We have captured `r fish_ct` fish comprised of `r spp_ct` unique species. Table \@ref(tab:ct) summarizes current fish capture count by species.
 
@@ -171,11 +169,15 @@ Since initiation of fieldwork in summer 2021:
 ```{r, site-visits, echo = F, fig.cap = "cap"}
 n_sites %>%
   kbl(caption = "Total site visits") %>%
-  kable_paper(full_width = F, html_font = "Cambria", 
-              bootstrap_options = c("striped", "hover", "condensed", "responsive"))
+  kable_paper(full_width = F, html_font = "Cambria")
+
+#, 
+ #             bootstrap_options = c("striped", "hover", "condensed", "responsive"))
 
 # fix w/ webshot or make non-html
 ```
+
+***
 
 <br>
 
@@ -183,20 +185,26 @@ n_sites %>%
 
 spp_ct_n %>%
   kbl(caption = "Total fish capture count by species") %>%
-  kable_paper(full_width = F, html_font = "Cambria", 
-              bootstrap_options = c("striped", "hover", "condensed", "responsive"))
+  kable_paper(full_width = F, html_font = "Cambria")
+#, 
+ #             bootstrap_options = c("striped", "hover", "condensed", "responsive"))
 
 ```
+
+***
 
 <br>
 
 ```{r site-spp-ct, echo = F, fig.cap = "cap"}
 
 site_spp_ct %>%
-  kbl(caption = "Total fish capture count by species at each site. Use scroll bars to see full table.") %>%
-  kable_paper(full_width = F, html_font = "Cambria", 
-              bootstrap_options = c("striped", "hover", "condensed", "responsive")) %>%
-  kable_styling(latex_options = c("scale_down","striped")) %>%
-  scroll_box(width = "100%", height = "500px")
+  kbl(caption = "Total fish capture count by species at each site.") %>%
+  kable_paper(full_width = F, html_font = "Cambria") 
+
+#%>%
+#, 
+ #             bootstrap_options = c("striped", "hover", "condensed", "responsive")) %>%
+  #kable_styling(latex_options = c("scale_down","striped")) %>%
+#  scroll_box(width = "100%", height = "500px")
 
 ```
