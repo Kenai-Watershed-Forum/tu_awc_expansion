@@ -6,43 +6,31 @@
 
 In summer 2021 we surveyed sites primarily in the region North of Kenai/Soldotna within an hour's walking distance of the road system.
 
-Survey site selections were made primarily by visually assessing the overlaid map layers of the Anadromous Waters Catalog with the [USGS National Hydrography Database](https://www.usgs.gov/core-science-systems/ngp/national-hydrography) (NHD). In areas where previously documented anadromous stream or lake extents ended yet connected waterbodies continued upstream, we targeted sites suitable for minnow trapping and/or hook and line survey.
+Survey site selections were made primarily by visually assessing the overlaid map layers of the Anadromous Waters Catalog with the [USGS National Hydrography Database](https://www.usgs.gov/core-science-systems/ngp/national-hydrography) (NHD)[^discussion-1]. In areas where previously documented anadromous stream or lake extents ended yet connected water bodies continued upstream, we targeted sites suitable for minnow trapping and/or hook and line survey.
+
+[^discussion-1]: <https://www.usgs.gov/core-science-systems/ngp/national-hydrography>
 
 At sites surveyed, we captured primarily non-anadromous species such as stickleback and sculpin. We also captured some resident salmonid species such as Dolly Varden and Rainbow Trout.
 
 These results support several conclusions that will direct future fieldwork efforts into summer 2022:
 
--   A need exists to modify methods for survey site selection. Relying on visual assessment of overlay between documented AWC habitat and the NHD map may be insufficient as a prospecting guide for yet-unidentified anadromous waters. Early discussions in Fall 2021 with personnel at ADF&G's Habitat Division in Anchorage have yielded valuable insight and potential for collaboration. KWF will work with ADF&G in winter 2021/2022 to further refine fieldwork site selection.
+-   A need exists to refine methods for survey site selection. Relying on visual assessment of overlay between documented AWC habitat and the NHD map may be insufficient as a prospecting guide for yet-unidentified anadromous waters. Early discussions in Fall 2021 with personnel at ADF&G's Habitat Division in Anchorage have yielded valuable insight and potential for collaboration. KWF will work with ADF&G in winter 2021/2022 to further refine fieldwork site selection.
 
--   Some drainages in the North Kenai/Nikiski area that may have been historically anadromous have man-made barriers to fish passage that we identified in Summer 2021. One such example was previously undocumented as was discovered by TU volunteers, discussed further in the section below, [Highlight: Habitat Connectivity](####%20Highlight:%20Habitat%20Connectivity). Identifying fish passage barrier sites is a critical first step in determining if restoration feasible.
-
--   The task of documenting yet-unidentified anadromous habitat is particularly urgent in watersheds encompassing urban and suburban areas.
-
-#### Highlight: Soldotna Creek Tributary
-
-KWF was notified of a previously undocumented tributary segment in the Soldotna Creek drainage in July 2021. The tributary was documented as anadromous up to a road crossing approximately 100 m upstream from the Soldotna Creek mainstem, but the stream channel continued beyond. The stream segment upstream of the road crossing had been recently excavated as part of a new development project, but it was suspected that the modified channel still supported fish populations. KWF staff placed minnow traps at the most upstream locations where the traps could still be submerged. Over the course of several site visits we captured a total of 65 Coho Salmon and five Dolly Varden.
-
-KWF submitted these data in ADFG's September 2021 call for data, and documented the approximate paths of existing stream channels, supported by several dozen ground-truthing photos. These data are displayed in the map figure below, and are also accessible at [ArcGIS Online](https://www.arcgis.com/apps/webappviewer/index.html?id=04f8f5082147442bae030507a303b686&extent=-16811989.9598%2C8510367.6671%2C-16810169.803%2C8511166.6729%2C102100&showLayers=csv_417%3BconvertedByApolloMapping_1__shapefile_6944_0%3BAWC_2020_Layers_9843%3BWetlands_6390_0%3BWetlands_6390_1%3Bnhd_1571_2%3Bnhd_1571_3%3Bnhd_1571_4%3Bnhd_1571_5%3Bnhd_1571_6).
-
-<iframe width="800" height="600" frameborder="0" scrolling="no" allowfullscreen src="https://arcg.is/1XO9n5">
-
-</iframe>
-
-The post-hoc documentation of this previously unidentified salmon stream after it has been altered emphasizes the need for continued thorough efforts to document anadromous habitat, particularly in watersheds experiencing growth and development. Communication with property owners remains critical to the task of identifying previously undocumented anadromous habitat.
+-   Some drainages in the North Kenai/Nikiski area that may have been historically anadromous have man-made barriers to fish passage that we identified in Summer 2021. One such example was previously undocumented as was discovered by TU volunteers, discussed further in the section below, [Highlight: Habitat Connectivity](####%20Highlight:%20Habitat%20Connectivity). Identifying fish passage barrier sites is a critical first step in determining if restoration is feasible.
 
 <br>
 
 #### Highlight: Habitat Connectivity
 
-In two cases where map interpretation suggested presence of salmonids but we captured none, we visited other locations in the watershed where fish barriers may be present. We found evidence of man-made fish barriers at two locations:
+In one case where map interpretation suggested presence of salmonids but we captured none, we visited other locations in the watershed where fish barriers may be present. We found evidence of man-made fish barriers:
 
-1.  [Suneva Lake]{.ul} - Suneva Lake lies to the North of Daniels Lake in the Nikiski area. The lake's surface area is appx 1.0 sq km, and flows directly in to Cook Inlet 0.61 km downstream from the lake outlet. Aerial imagery indicates that littoral is \~95% undeveloped. Littoral parcels are primarily privately owned.
+-   [Suneva Lake]{.ul} - Suneva Lake lies to the North of Daniels Lake in the Nikiski area. The lake's surface area is appx 1.0 sq km, and flows directly in to Cook Inlet 0.61 km downstream from the lake outlet. Aerial imagery indicates that littoral is \~95% undeveloped. Littoral parcels are primarily privately owned.
 
-    We conducted sampling events on two separate days at Suneva lake, using minnow traps as well as angling. We captured stickleback and sculpin on both occasions, but no salmonids despite extensive effort.
+We conducted extensive sampling on Suneva lake, using minnow traps as well as angling. We captured stickleback and sculpin, but no salmonids despite extensive effort.
 
-    We visited the outlet at Suneva lake and discovered two perched culverts installed where the outlet stream crosses Sockeye Avenue (see figure \@ref(fig:suneva-outlet). The culvert is likely impeding fish passage, as there is a drop of several feet between the stream channel and the culvert outlet.
+We visited the outlet at Suneva lake and discovered two perched culverts installed where the outlet stream crosses Sockeye Avenue (see figure \@ref(fig:suneva-outlet). The culvert is likely impeding fish passage (assuming no additional downstream barriers), as there is a drop of several feet between the stream channel and the culvert outlet.
 
-    A site visit to the mouth of the creek flowing from Suneva Lake at its outlet at Cook Inlet will help determine if the waterway has potential to host anadromous species and may be part of future fieldwork.
+A site visit to the mouth of the creek flowing from Suneva Lake at its outlet at Cook Inlet will help determine if the waterway has potential to host anadromous species and may be part of future fieldwork.
 
 ```{r suneva-outlet, echo = F, fig.cap = "Perched culvert near outlet of Suneva Lake, intersection with Sockeye Avenue "}
 

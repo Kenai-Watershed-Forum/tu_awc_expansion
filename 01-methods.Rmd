@@ -110,6 +110,11 @@ In some cases where maps indicated a strong likelihood of anadromous habitat yet
 
 ## Data management and analysis
 
+### Data management
 We recorded data in the field using pre-printed Rite-in-the-Rain field forms, and entered data into a [Google Sheets database](https://bit.ly/eas_data)^[https://bit.ly/eas_data]. We read data into RStudio and generated this report using the bookdown package (v 0.24). Project edits are managed through a dedicated [project GitHub repository](https://github.com/Kenai-Watershed-Forum/tu_awc_expansion)^[https://github.com/Kenai-Watershed-Forum/tu_awc_expansion].
 
 All project documents and data can be accessed in a dedicated [Google Drive folder](https://bit.ly/tu_kwf_embrace_a_stream_2021)^[https://bit.ly/tu_kwf_embrace_a_stream_2021]. 
+
+### Analysis
+
+We generated summary tables displaying the quantity of fish captured at each sample site by date. We also generated a csv file reformatting all fish capture data to prepare for submission to the Alaska Department of Fish and Game to fulfill Aquatic Resource Permit requirements.

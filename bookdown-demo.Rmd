@@ -1,3 +1,49 @@
+---
+title: "Kenai Peninsula Chapter of Trout Unlimited Embrace-a-Stream Project: Expanding Knowledge of Fish Habitat in Alaska's Kenai Peninsula"
+author: "Benjamin Meyer, Kenai Watershed Forum (ben@kenaiwatershed.org)"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output: 
+  bookdown::gitbook
+  bookdown::pdf_document 
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+github-repo: 'https\://bookdown.org/kwfwqx/tu_awc_expansion/'
+description: "This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook."
+---
+
+# Introduction
+
+Placeholder
+
+
+## Synopsis
+## Introduction
+## Volunteer Training
+## Objectives
+
+<!--chapter:end:index.Rmd-->
+
+
+# Methods
+
+Placeholder
+
+
+## Site selection
+## Fish capture and processing
+### Minnow Trapping
+### Angling
+### Fish processing
+## Habitat connectivity
+## Data management and analysis
+### Data management
+### Analysis
+
+<!--chapter:end:01-methods.Rmd-->
+
 # Results
 
 ```{r , include=FALSE}
@@ -281,4 +327,28 @@ z <- fish_dat %>%
 ```
 
 
+
+
+<!--chapter:end:02-results.Rmd-->
+
+
+# Discussion
+
+Placeholder
+
+
+## 2021 Fieldwork Summary
+### Anadromous habitat surveys
+#### Highlight: Habitat Connectivity
+
+<!--chapter:end:03-discussion.Rmd-->
+
+# 2022 Fieldwork PLans
+
+## In progress
+
+### Anadromous habitat surveys
+
+
+<!--chapter:end:04-nextseason.Rmd-->
 
