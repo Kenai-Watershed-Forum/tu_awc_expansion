@@ -62,7 +62,6 @@ library(readr)
 library(readxl)
 library(writexl)
 library(hms)
-library(plotly)
 library(DT)
 library(xlsx)
 library(leaflet)
@@ -126,7 +125,7 @@ sample_events <- read_sheet(url, sheet =  "A_Sample_Event") %>%
 
 ### fish count
 fish_dat <- read_sheet(url, sheet = "F_Fish_ID") %>%
-  select(-QC1,-QC2,-data_entry,-notes)  %>%
+  select(-QC1,-QC2,-data_entry)  %>%
   
   # retain only TU events by using an inner join to only dates when TU events occurred. Assumes that no other simultaneous fieldwork was done elsewhere that day
   inner_join(sample_events, by = c("site_depart_date","site"))
@@ -266,34 +265,48 @@ sample_effort <- read_sheet(url, sheet = "C_Sample_Effort") %>%
   distinct()
 
 # join sample effort data
+fish_dat <- left_join(fish_dat,sample_effort, by = c("site","site_depart_date"))
 
-# prep...
-z <- fish_dat %>%
+# prepare data into ARP format
+arp <- fish_dat %>%
   
   # rectify ARP column named "additional count"; leave blank if count = 1, make n-1 if count > 1
   # presumed that count = 1 if additional count = 0
   mutate(`Additional count (1)` = ifelse(fish_dat$count <= 1, "0",fish_dat$count - 1)) %>%
   
   # remove extraneous columns
-  select(-site_arrive_time, -site_depart_time,-photo_id, -count) %>%
+  select(-site_arrive_time, -site_depart_time,-photo_id, -count, -camera_id, -project_org,
+         -site_arrive_date) %>%
   
   # rename existing columns
-  rename(Latitude = latitude,
-         Longitude = longitude,
+  rename(`Latitude (decimal degrees)` = latitude,
+         `Longitude (decimal degrees)` = longitude,
          Date = site_depart_date,
-         `Location ID` = site,
+         `Location ID (optional)` = site,
          Species = species,
          `Life stage` = lifestage,
          `Weight (g)` = wt_g,
-         `Length (mm) (NO estimates or ranges)` = fl_mm
-         ) %>%
+         `Length (mm) (NO estimates or ranges)` = fl_mm,
+         `Length method` = length_method,
+         `Disposition (1)` = disposition,
+         Comments = notes,
+         `Fish collection method` = gear_type) %>%
+  
+  # remove extraneous columns
+  select(-observer_name) %>%
   
   # create missing columns
   mutate(Datum = "",
          `Coordinate determination method` = "",
-         `Name of water body` = site,
-         `Observer name (the first and last name of the person handling fish)` = observer_name,
-         )
+         `Name of water body` = fish_dat$site,
+         `Observer name (the first and last name of the person handling fish)` = fish_dat$observer_name,
+         `Age method (sample type)` = "",
+         `ADF&G GCL` = "",
+         `Additional count (2)` = "",
+  `Disposition (2)` = "",
+  `Anesthesia/ Sedative Used (Leave blank if none used)` = "",
+  Sex = ""
+         ) %>%
   
   select(
   `Location ID (optional)`,
@@ -343,12 +356,12 @@ Placeholder
 
 <!--chapter:end:03-discussion.Rmd-->
 
-# 2022 Fieldwork PLans
+# 2022 Fieldwork Plans
 
-## In progress
+## 2022 Anadromous habitat surveys
 
-### Anadromous habitat surveys
-
+Fieldwork described in this report will continue through summer 2022. A minimum of five additional fieldwork days will be supervised by KWF staff at dates to be determined. Fieldwork dates will generally be on weekend days, and will be selected based on availability of Trout Unlimited.
+volunteers.
 
 <!--chapter:end:04-nextseason.Rmd-->
 
