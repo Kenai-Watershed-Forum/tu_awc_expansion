@@ -207,9 +207,17 @@ site_spp_ct %>%
 #  scroll_box(width = "100%", height = "500px")
 
 ```
+
 <br>
 
-```{r}
+## Aquatic Resource Permit and AWC Nominations
+
+2021 fish capture data was reformatted in to a csv file for submission to ADF&G in fulfillment of the required [Aquatic Resource Permit](http://www.adfg.alaska.gov/index.cfm?adfg=otherlicense.aquatic_reports)^[http://www.adfg.alaska.gov/index.cfm?adfg=otherlicense.aquatic_reports]; available in the online in [this project's GitHub repo](https://github.com/Kenai-Watershed-Forum/tu_awc_expansion/tree/main/output)^[https://github.com/Kenai-Watershed-Forum/tu_awc_expansion/tree/main/output]. These data will be also be shared with the local Area Biologist at the Kenai River Center to determine the best strategy for submitting nomination data in January 2022.
+
+The total number of stream miles / lake acres of successfully nominated to the AWC will be posted here when available in January 2022.
+
+```{r, echo = F}
+
 # prep data format for ARP report: https://www.adfg.alaska.gov/sf/SARR/AWC/index.cfm?ADFG=nomSubmit.about
 
 # get unique sampling events (site, location, fishing method)
@@ -259,7 +267,8 @@ arp <- fish_dat %>%
          `Additional count (2)` = "",
   `Disposition (2)` = "",
   `Anesthesia/ Sedative Used (Leave blank if none used)` = "",
-  Sex = ""
+  Sex = "",
+  Age = ""
          ) %>%
   
   select(
@@ -289,6 +298,8 @@ arp <- fish_dat %>%
   Comments						
   )
 
+# export csv to repo
+write.csv(arp, "output/aquatic_resource_permit_2021.csv", row.names = F)
 
 
 ```
