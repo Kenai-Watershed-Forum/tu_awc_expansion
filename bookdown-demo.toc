@@ -11,10 +11,14 @@
 \contentsline {subsection}{\numberline {2.2.3}Fish processing}{14}{subsection.2.2.3}%
 \contentsline {section}{\numberline {2.3}Habitat connectivity}{14}{section.2.3}%
 \contentsline {section}{\numberline {2.4}Data management and analysis}{15}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Data management}{15}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Analysis}{15}{subsection.2.4.2}%
 \contentsline {chapter}{\numberline {3}Results}{17}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Fish capture}{17}{section.3.1}%
-\contentsline {chapter}{\numberline {4}Discussion}{19}{chapter.4}%
-\contentsline {section}{\numberline {4.1}2021 Fieldwork Summary}{19}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Anadromous habitat surveys}{19}{subsection.4.1.1}%
-\contentsline {subsubsection}{\numberline {4.1.1.1}Highlight: Soldotna Creek Tributary}{20}{subsubsection.4.1.1.1}%
-\contentsline {subsubsection}{\numberline {4.1.1.2}Highlight: Habitat Connectivity}{20}{subsubsection.4.1.1.2}%
+\contentsline {section}{\numberline {3.2}Aquatic Resource Permit and AWC Nominations}{19}{section.3.2}%
+\contentsline {chapter}{\numberline {4}Discussion}{21}{chapter.4}%
+\contentsline {section}{\numberline {4.1}2021 Fieldwork Summary}{21}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Anadromous habitat surveys}{21}{subsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.1.1}Highlight: Habitat Connectivity}{22}{subsubsection.4.1.1.1}%
+\contentsline {chapter}{\numberline {5}2022 Fieldwork Plans}{25}{chapter.5}%
+\contentsline {section}{\numberline {5.1}2022 Anadromous habitat surveys}{25}{section.5.1}%

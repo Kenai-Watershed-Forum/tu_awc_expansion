@@ -271,6 +271,7 @@ arp <- fish_dat %>%
   Age = ""
          ) %>%
   
+  # order columns to match ARP
   select(
   `Location ID (optional)`,
   `Latitude (decimal degrees)`,
