@@ -176,7 +176,7 @@ n_sites %>%
 # fix w/ webshot or make non-html
 ```
 
-***
+
 
 <br>
 
@@ -190,7 +190,7 @@ spp_ct_n %>%
 
 ```
 
-***
+
 
 <br>
 
@@ -198,13 +198,11 @@ spp_ct_n %>%
 
 site_spp_ct %>%
   kbl(caption = "Total fish capture count by species at each site.") %>%
-  kable_paper(full_width = F, html_font = "Cambria") 
+  kable_paper(full_width = F, html_font = "Cambria",
 
-#%>%
-#, 
- #             bootstrap_options = c("striped", "hover", "condensed", "responsive")) %>%
-  #kable_styling(latex_options = c("scale_down","striped")) %>%
-#  scroll_box(width = "100%", height = "500px")
+              bootstrap_options = c("condensed")) %>%
+  kable_styling(latex_options = c("scale_down","striped")) %>%
+  scroll_box(width = "100%", height = "500px")
 
 ```
 
