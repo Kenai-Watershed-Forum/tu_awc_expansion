@@ -50,16 +50,7 @@ points_theme <- theme(axis.title = element_text(size = 14, face = "bold"),
 select <- dplyr::select
 ```
 
-```{r, echo = F}
 
-
-# notes 
-
-## total number of sites with anad species ("n of x sites had newly id'd spp")
-
-## 
-
-```
 
 ```{r, echo = F}
 # summarise total capture effort
@@ -161,7 +152,7 @@ During fieldwork in summer 2021 and 2022:
 
 -   Table \@ref(tab:site-visits) summarises total samping events by individual site. We typically sampled a site only one time each.
 
--   We have captured `r fish_ct` fish comprised of `r spp_ct` unique species. Table \@ref(tab:ct) summarizes current fish capture count by species.
+-   We captured `r fish_ct` fish comprised of `r spp_ct` unique species. Table \@ref(tab:ct) summarizes fish capture count by species.
 
 -   Table \@ref(tab:site-spp-ct) summarizes total fish capture for each species by site.
 
@@ -223,10 +214,9 @@ read_sheet(url, sheet =  "awc_nominations") %>%
 
 <br>
 
-```{r, awc-noms-map, echo = F, fig.cap = "map map"}
+```{r, awc-noms-map, echo = F, fig.height=12, fig.width=14, fig.cap = "Map of AWC nominations."}
 
 knitr::include_graphics('images/awc_noms_map.png')
-
 
 ```
 
