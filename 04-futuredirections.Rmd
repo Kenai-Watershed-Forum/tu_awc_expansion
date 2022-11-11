@@ -1,0 +1,38 @@
+# Future Directions
+
+Our collaboration between the Kenai Peninsula Chapter of Trout Unlimited and Kenai Watershed Forum serves as a compelling example of how to engage volunteers interested in conserving fish habitat with hands-on opportunities to do so. There is great potential to expand and continue the work described in this report, and a great urgency to do so.
+
+The Anadromous Waters nominations generated as a result of this project will play an important role in conserving salmon habitat in the areas we surveyed. However the primary lesson from this project is the need to re-frame our approach for how to discover, document, and conserve anadromous habitat. Our current methods would continue to yield additional nominations, but at a scale and pace insufficient to keep pace with the need to identify salmon streams in the pathway of new proposed developments. The potential to accelerate this work and document potentially hundreds of additional stream miles on the Kenai Peninsula is ready at hand, and much of work has already been done.
+
+
+## Rationale for Anadromous Waters mapping
+As described in Section 1.2 of this report, current statute is such that rivers, streams, and lakes throughout Alaska are presumed non-anadromous until otherwise demonstrated, thus the need for the hands-on documentation of where anadromous fish are found. Various state, federal, tribal, and non-profit entities have pursued this work for decades and contributed to the detail contained within the anadromous waters catalog. Even so, tens of thousands of miles of salmon habitat remain undocumented, even in areas adjacent to developed communities
+
+Even with
+
+
+
+
+.
+
+## Current State of AWC mapping
+
+
+
+but main take-away from this project is the need for a more sophisticated approach
+
+needs: see lower soldotna creek nom; described in section x of AKSSF report; link to it
+
+
+
+
+
+-- produce netmap for lower kenai
+-- focus on lower kenai, combine w/ USFS layer
+-- generate suggested sites in a reproducible way so that 
+-- realign awc paths with nhd
+-- fish map app
+-- comment on the need to think about whats above upper extent of anadromy; eg wipfli 1998
+ - special challenge - property access
+ 
+ -- tu volunteers can continue this work in 2023

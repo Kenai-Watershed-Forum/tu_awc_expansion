@@ -84,7 +84,7 @@ The Kenai Peninsula's watersheds are significant producers of Pacific salmon. Cr
 
 [^index-4]: <https://www.kenaicommunityfoundation.org/>
 
-## Introduction
+## Introduction{#introduction}
 
 Salmon are intrinsic to the cultural and economic well being of Alaska, but cannot persist on the landscape without healthy habitat. Through strategic conservation efforts, riparian and instream habitat can continue to maintain salmon populations as well as transport marine-derived nutrients; maintain hydrology; and provide refuge during a rapidly changing climate. In recognition of the importance of protecting anadromous fish habitat, the State of Alaska enacted [Alaska Statute 16.05.871](http://www.adfg.alaska.gov/index.cfm%3Fadfg=habitatregulations.prohibited)[^index-5], "Protection of Fish and Game", which requires the state to list rivers, lakes, and streams important for the spawning, rearing, or migration of anadromous fish, while also requiring the prior approval of construction or use of said waterbody that may result in adverse effects on salmon populations. In response, ADF&G began overseeing the AWC whose data is now publicly hosted online for resource managers and interested members of the public to utilize. See Figure \@ref(fig:awc-map) for ADFG's online interactive map these data. Access the map at <https://bit.ly/awc_map>.
 

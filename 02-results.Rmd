@@ -157,7 +157,7 @@ site_spp_ct[is.na(site_spp_ct)] <- 0
 
 During fieldwork in summer 2021 and 2022:
 
--   Over course of `r n_days` fieldwork days in summer 2021, KPTU in collaboration with KWF have conducted a total of `r n_events` sampling events at `r n_sites_total` unique sites, including the training event. See the interactive project map in the Methods section ("[Site selection](##%20Site%20selection)") for a current map of where and when sampling events have occurred.
+-   Over course of `r n_days` fieldwork days in summer 2021 and 2022 (including the training event), KPTU in collaboration with KWF have conducted a total of `r n_events` sampling events at `r n_sites_total` unique sites. See the interactive project map in the Methods section ("[Site selection](##%20Site%20selection)") for a current map of where and when sampling events have occurred.
 
 -   Table \@ref(tab:site-visits) summarises total samping events by individual site. We typically sampled a site only one time each.
 
@@ -176,8 +176,6 @@ n_sites %>%
 # fix w/ webshot or make non-html
 ```
 
-
-
 <br>
 
 ```{r ct, echo = F, fig.cap = "Total fish capture count by species"}
@@ -189,8 +187,6 @@ spp_ct_n %>%
  #             bootstrap_options = c("striped", "hover", "condensed", "responsive"))
 
 ```
-
-
 
 <br>
 
@@ -208,11 +204,43 @@ site_spp_ct %>%
 
 <br>
 
-## Aquatic Resource Permit and AWC Nominations
+## AWC Nominations
 
-2021 and 2022 fish capture data was reformatted in to a csv file for submission to ADF&G in fulfillment of the required [Aquatic Resource Permit](http://www.adfg.alaska.gov/index.cfm?adfg=otherlicense.aquatic_reports)^[http://www.adfg.alaska.gov/index.cfm?adfg=otherlicense.aquatic_reports]; available in the online in [this project's GitHub repo](https://github.com/Kenai-Watershed-Forum/tu_awc_expansion/tree/main/output)^[https://github.com/Kenai-Watershed-Forum/tu_awc_expansion/tree/main/output]. These data will be also be shared with the local Area Biologist at the Kenai River Center to determine the best strategy for submitting nomination data in January 2022.
+Fish capture data was evaluated against the 2022 Anadromous Waters Catalog to identify new stream segment nominations. Complete submission materials may be accessed in the project [Google Drive folder (link)](https://drive.google.com/drive/folders/1VygMPNtLJvRrKFhdDC77fmSIETm_mmtg?usp=share_link). Nominations were sent to the ADF&G Habitat Division in Anchorage in September 2022.
 
-The total number of stream miles / lake acres of successfully nominated to the AWC will be posted here when available in January 2022.
+A total length of **3.51 miles** of stream segments were included in the nominations from fieldwork supported by KPTU activities. Table \@ref(tab:awc-noms) breaks down each nomination by length. Figure \@ref(fig:awc-noms-map)
+
+```{r, awc-noms, echo = F, fig.cap = "cap"}
+
+### sample events
+read_sheet(url, sheet =  "awc_nominations") %>%
+  select(-project_org,-year) %>%
+  filter(!is.na(Site)) %>%
+  kbl(caption = "AWC Nominations") %>%
+  kable_paper(full_width = F, html_font = "Cambria")
+
+```
+
+<br>
+
+```{r, awc-noms-map, echo = F, fig.cap = "map map"}
+
+knitr::include_graphics('images/awc_noms_map.png')
+
+
+```
+
+<br>
+
+
+
+## Aquatic Resource Permit
+Fish capture data was reformatted each fall in to a csv file for submission to ADF&G in fulfillment of the required [Aquatic Resource Permit](http://www.adfg.alaska.gov/index.cfm?adfg=otherlicense.aquatic_reports)[^02-results-1]; available in the online in [this project's GitHub repo](https://github.com/Kenai-Watershed-Forum/tu_awc_expansion/tree/main/output)[^02-results-2].
+
+[^02-results-1]: <http://www.adfg.alaska.gov/index.cfm?adfg=otherlicense.aquatic_reports>
+
+[^02-results-2]: <https://github.com/Kenai-Watershed-Forum/tu_awc_expansion/tree/main/output>
+
 
 ```{r, echo = F}
 
@@ -302,6 +330,3 @@ write.csv(arp, "output/aquatic_resource_permit_2021.csv", row.names = F)
 
 
 ```
-
-
-
