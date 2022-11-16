@@ -74,7 +74,7 @@ knitr::include_graphics('images/juv_coho1.jpeg')
 
 ## Synopsis
 
-The Kenai Peninsula's watersheds are significant producers of Pacific salmon. Critical to Alaska's economic and cultural wellbeing, these salmon support fisheries both inland and throughout Cook Inlet. [The Kenai Peninsula Chapter of Trout Unlimited](https://kenaipeninsula.tu.org/)[^index-1] (KPTU) in collaboration with [Kenai Watershed Forum](https://kenaiwatershed.org/)[^index-2] (KWF) are documenting habitat for salmonid spawning, rearing, and migration in order to increase the known water bodies recognized in the Alaska Department of Fish and Game's (ADF&G's) Anadromous Waters Catalog (AWC). The AWC is Alaska's most powerful tool for regulating, protecting, and conserving anadromous fish habitat. Project funding is secured from Trout Unlimited's [Embrace-a-Stream](https://www.embraceastream.org/)[^index-3] program as well as the [Kenai Community Foundation](https://www.kenaicommunityfoundation.org/)[^index-4]. This document contains data and analyses reporting results from the project, as well as suggesting directiosn for future work.
+The Kenai Peninsula's watersheds are significant producers of Pacific salmon. Critical to Alaska's economic and cultural wellbeing, these salmon support fisheries both inland and throughout Cook Inlet. [The Kenai Peninsula Chapter of Trout Unlimited](https://kenaipeninsula.tu.org/)[^index-1] (KPTU) in collaboration with [Kenai Watershed Forum](https://kenaiwatershed.org/)[^index-2] (KWF) are documenting habitat for salmonid spawning, rearing, and migration in order to increase the known water bodies recognized in the Alaska Department of Fish and Game's (ADF&G's) Anadromous Waters Catalog (AWC). The AWC is Alaska's most powerful tool for regulating, protecting, and conserving anadromous fish habitat. Project funding is secured from Trout Unlimited's [Embrace-a-Stream](https://www.embraceastream.org/)[^index-3] program as well as the [Kenai Community Foundation](https://www.kenaicommunityfoundation.org/)[^index-4]. This document contains data and analyses reporting results from the project, as well as detailed suggestions on directions of future efforts.
 
 [^index-1]: <https://kenaipeninsula.tu.org/>
 
@@ -90,7 +90,7 @@ Salmon are intrinsic to the cultural and economic well being of Alaska, but cann
 
 [^index-5]: <http://www.adfg.alaska.gov/index.cfm%3Fadfg=habitatregulations.prohibited>
 
-```{r, awc-map, echo = F, results = "asis", fig.cap = "Online interactive map of Alaska Department of Fish and Game's Anadromous Waters Catalog. https://bit.ly/awc_map."}
+```{r, awc-map, echo = F, results = "asis", fig.cap = "Online interactive map of Alaska Department of Fish and Game's Anadromous Waters Catalog. Access the map at https://bit.ly/awc_map."}
 
 knitr::include_graphics('images/awc_mapper.png')
 
