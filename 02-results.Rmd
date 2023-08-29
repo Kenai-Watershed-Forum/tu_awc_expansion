@@ -228,6 +228,8 @@ read_sheet(url, sheet =  "awc_nominations") %>%
 knitr::include_graphics('images/awc_noms_map.png')
 
 # transition this screenshot to a layer that highlights new segments
+
+# upload new points layer w/ sites that had successful nomination, clip segments to d/s AWC point, measure length
 ```
 
 <br>
