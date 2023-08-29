@@ -72,7 +72,7 @@ url <- "https://docs.google.com/spreadsheets/d/1S0hwY4EQo9Xtz5d4UnSBCbZoJ0ft_HGQ
 ### sample events
 sample_events <- read_sheet(url, sheet =  "A_Sample_Event") %>%
   # retain only TU events
-  filter(project_org == "TU") %>%
+  # filter(project_org == "TU") %>%
   transform(site_arrive_time = as_hms(site_arrive_time),
             site_depart_time = as_hms(site_depart_time)) %>%
   select(-QC1,-QC2,-data_entry,-notes,-crew)
@@ -155,9 +155,9 @@ site_spp_ct[is.na(site_spp_ct)] <- 0
 
 ## Fish capture
 
-During fieldwork in summer 2021 and 2022:
+During fieldwork in summer 2021 - 2023:
 
--   Over course of `r n_days` fieldwork days in summer 2021 and 2022 (including the training event), KPTU in collaboration with KWF have conducted a total of `r n_events` sampling events at `r n_sites_total` unique sites. See the interactive project map in the Methods section ("[Site selection](##%20Site%20selection)") for a current map of where and when sampling events have occurred.
+-   Over course of `r n_days` fieldwork days 2021 - 2023 (including the training event), we conducted a total of `r n_events` sampling events at `r n_sites_total` unique sites. See the interactive project map in the Methods section ("[Site selection](##%20Site%20selection)") for a current map of where and when sampling events have occurred. [MAP WILL BE UPDATED FOR 2023]
 
 -   Table \@ref(tab:site-visits) summarises total samping events by individual site. We typically sampled a site only one time each.
 
@@ -227,7 +227,7 @@ read_sheet(url, sheet =  "awc_nominations") %>%
 
 knitr::include_graphics('images/awc_noms_map.png')
 
-
+# transition this screenshot to a layer that highlights new segments
 ```
 
 <br>

@@ -25,11 +25,11 @@ also evident. However in a broader view, the primary take away from this
 project is highlighting the need to re-frame our long term approach for
 how to discover, document, and conserve anadromous habitat. Our current
 methods would continue to yield additional AWC nominations, but at a
-scale insufficient to keep pace with the need to identify salmon streams
-in the path of new developments. The potential to accelerate this work
-and document hundreds of additional anadromous stream miles on the Kenai
-Peninsula is ready at hand, and much of the initial groundwork has
-already been completed and is awaiting financial support.
+scale insufficient to keep pace with permitting in the path of new
+developments. The potential to accelerate this work and document
+hundreds of additional anadromous stream miles on the Kenai Peninsula is
+ready at hand, and much of the initial groundwork has already been
+completed and is awaiting financial support.
 
 ## Rationale for Anadromous Waters Mapping in Alaska
 
@@ -91,15 +91,18 @@ While all these methods are useful in generating ideas for survey
 locations, they do not comprise a systematic approach and they are based
 on incomplete stream network maps. In order for conservation needs to
 better match the pace of conservation challenges, a more comprehensive
-approach is needed. In the southern Kenai Peninsula, researchers with
-Kachemak Bay National Estuarine Research Reserve (KBNERR) successfully
-applied just such an approach during a study from 2012 ([King et al.
+approach is needed.
+
+Some efforts toward this end have been initiated in recent years. In the
+southern Kenai Peninsula, researchers with Kachemak Bay National
+Estuarine Research Reserve (KBNERR) successfully applied a predictive
+habitat modeling approach in a study from 2012 ([King et al.
 2012](https://www.journals.uchicago.edu/doi/abs/10.1899/11-109.1))[^04-futuredirections-6]
 and added dozens of miles to the AWC from resulting efforts. However,
 the approach taken by the KBNERR researchers would arguably prove
 challenging to replicate at broader geographic scales, as it relies on
 extensive ground truthing of habitat characteristics and flow to produce
-the predictive model.s
+the predictive models.
 
 [^04-futuredirections-6]: <https://www.journals.uchicago.edu/doi/abs/10.1899/11-109.1>
 
@@ -120,8 +123,8 @@ Predicting the locations of upper anadromous extent allows researchers
 to take a more informed approach to prioritzing their fieldwork of
 documenting anadromous habitat. Researchers in southcentral Alaska
 should aspire to emulate the approach described in the preceding
-StoryMap, focusing particularly on waters outside federally protected
-areas.
+StoryMap, prioritizing surveys of waters outside the federally managed
+areas of the Kenai National Wildlife Refuge and Chugach National Forest.
 
 For future long-term efforts to effectively gather field data to be used
 in AWC nominations, two general research directions are suggested:
@@ -146,7 +149,8 @@ observations. Given the near-perfect rate of predictions thus far using
 this approach, in the future these maps of stream segments *predicted*
 to be anadromous might be used by managers when evaluating environmental
 impacts and the need for permitting and mitigation -- pending continued
-public education and support and acceptance by regulators.
+model refinement, public education and support, and acceptance by
+regulators.
 
 ## Next Steps
 
@@ -232,6 +236,12 @@ experts. The following steps describe a path forward:
         [Bad Elf GNSS
         Surveyor](https://bad-elf.com/pages/be-gps-3300-detail)) when
         recording coordinates.
+        
+        
+```{r echo = F}
+# incorporare discussion on trial run of EoA modeling
+```
+        
 
 [^04-futuredirections-10]: <https://alaskafishmapping.org/>
 
