@@ -20,9 +20,23 @@ These results supported several conclusions that directed fieldwork efforts foll
 
 <br>
 
-#### Highlight: Lower Soldotna Creek
+#### Highlight: Lower Soldotna Creek Tributary
 
-Move content here from other AWC report
+KWF was notified of a previously undocumented tributary segment in the Soldotna Creek drainage in July 2021. The tributary was documented as anadromous up to a road crossing approximately 100 m upstream from the Soldotna Creek mainstem, but the stream channel continued beyond. The stream segment upstream of the road crossing had been recently excavated as part of a new development project, but it was suspected that the modified channel still supported fish populations. KWF staff placed minnow traps at the most upstream locations where the traps could still be submerged. Over the course of several site visits we captured a total of 65 Coho Salmon and five Dolly Varden.
+
+KWF submitted these data in ADFG's September 2021 call for data, and documented the approximate paths of existing stream channels, supported by several dozen ground-truthing photos. These data are displayed in the map figure below, and are also accessible at [ArcGIS Online](https://arcg.is/1XO9n5)^[https://arcg.is/1XO9n5]).
+
+
+<iframe width="500" height="400" frameborder="0" scrolling="no" allowfullscreen src="https://arcg.is/0qrH45"></iframe>
+
+
+The post-hoc documentation of this previously unidentified salmon stream after it has been altered emphasizes the need for continued thorough efforts to document anadromous habitat, particularly in watersheds experiencing growth and development. Communication with property owners remains critical to the task of identifying previously undocumented anadromous habitat.
+
+<br>
+
+
+
+
 
 #### Highlight: Habitat Connectivity to Suneva Lake
 
