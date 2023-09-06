@@ -1,5 +1,5 @@
 ---
-title: "Kenai Peninsula Chapter of Trout Unlimited Embrace-a-Stream Project: Expanding Knowledge of Fish Habitat in Alaska's Kenai Peninsula"
+title: "Expanding and Corroborating the Known Extent of Anadromous Waters in the Kenai Peninsula Throughout the Kenai Peninsula"
 author: "Benjamin Meyer, Kenai Watershed Forum (ben@kenaiwatershed.org)"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site

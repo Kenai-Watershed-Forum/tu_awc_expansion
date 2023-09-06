@@ -2,7 +2,7 @@
 
 ## 2021 Fieldwork
 
-### Anadromous habitat surveys
+### 2021 Anadromous habitat surveys
 
 In summer 2021 we surveyed sites primarily in the region North of Kenai/Soldotna within an hour's walking distance of the road system.
 
@@ -20,7 +20,7 @@ These results supported several conclusions that directed fieldwork efforts foll
 
 <br>
 
-#### Highlight: Lower Soldotna Creek Tributary
+#### 2021 Highlight: Lower Soldotna Creek Tributary
 
 KWF was notified of a previously undocumented tributary segment in the Soldotna Creek drainage in July 2021. The tributary was documented as anadromous up to a road crossing approximately 100 m upstream from the Soldotna Creek mainstem, but the stream channel continued beyond. The stream segment upstream of the road crossing had been recently excavated as part of a new development project, but it was suspected that the modified channel still supported fish populations. KWF staff placed minnow traps at the most upstream locations where the traps could still be submerged. Over the course of several site visits we captured a total of 65 Coho Salmon and five Dolly Varden.
 
@@ -35,31 +35,49 @@ The post-hoc documentation of this previously unidentified salmon stream after i
 <br>
 
 
+#### 2021 Highlight: Habitat Connectivity
 
+In two cases where map interpretation suggested presence of salmonids but we captured none, we visited other locations in the watershed where fish barriers may be present. We found evidence of man-made fish barriers at two locations:
 
+1.  [Suneva Lake]{.ul} - Suneva Lake lies to the North of Daniels Lake in the Nikiski area. The lake's surface area is appx 1.0 sq km, and flows directly in to Cook Inlet 0.61 km downstream from the lake outlet. Aerial imagery indicates that littoral is \~95% undeveloped. Littoral parcels are primarily privately owned.
 
-#### Highlight: Habitat Connectivity to Suneva Lake
+    We conducted sampling events on two separate days at Suneva lake, using minnow traps as well as angling. We captured stickleback and sculpin on both occasions, but no salmonids despite extensive effort.
 
-In one case where map interpretation suggested presence of salmonids but we captured none, we visited other locations in the watershed where fish barriers may be present. We found evidence of man-made fish barriers:
+    We visited the outlet at Suneva lake and discovered two perched culverts installed where the outlet stream crosses Sockeye Avenue (see figure \@ref(fig:suneva-outlet). The culvert is likely impeding fish passage, as there is a drop of several feet between the stream channel and the culvert outlet.
 
--   [Suneva Lake]{.underline} - Suneva Lake lies to the North of Daniels Lake in the Nikiski area. The lake's surface area is appx 6.0 sq km, and flows directly in to Cook Inlet 0.61 km downstream from the lake outlet. Aerial imagery indicates that littoral is \~95% undeveloped. Littoral parcels are primarily privately owned.
+    A site visit to the mouth of the creek flowing from Suneva Lake at its outlet at Cook Inlet will help determine if the waterway has potential to host anadromous species and may be part of future fieldwork.
 
-We conducted extensive sampling on Suneva lake, using minnow traps as well as angling. We captured stickleback and sculpin, but no salmonids despite extensive effort.
-
-We visited the outlet at Suneva lake and discovered two perched culverts installed where the outlet stream crosses Sockeye Avenue (see figure \@ref(fig:suneva-outlet). The culvert is likely impeding fish passage (assuming no additional downstream barriers), as there is a drop of several feet between the stream channel and the culvert outlet.
-
-A site visit to the mouth of the creek flowing from Suneva Lake at its outlet at Cook Inlet will help determine if the waterway has potential to host anadromous species and may be part of future fieldwork.
-
-```{r suneva-outlet, echo = F, fig.cap = "Perched culvert near outlet of Suneva Lake, intersection with Sockeye Avenue "}
+```{r suneva-outlet, echo = F, fig.cap = "Perched culvert near outlet of Suneva Lake, intersection with Sockeye Avenue",  out.height=400, out.extra= "angle = 90"}
 
 knitr::include_graphics('images/suneva_culvert.png')
 
 # note: photo is rotated 90 degrees in the code chunk options due to odd behavior; photo was showing up sideways upon document knit
-
-# for html: out.extra="style='transform:rotate(90deg);'"
 ```
 
+2.  [Salamatof Creek]{.ul} - Salatamtof Creek lies North of Kenai and South of Nikiski, crossing the Kenai Spur highway. A stream connection of 1.56 km flows from Lower Salamatof Lake to Cook Inlet, and a stream segment of 2.84 km connects the lower lake to Salamatof Lake. We sampled at a site in the stream segment connecting the two lakes on one occasion in Summer 2021 and captured a several hundred sticklebacks, but no salmonids.
+
+We visited the location where maps indicated that Salamatof Creek crosses the Kenai Spur Highway in August 2021 (figure \@ref(fig:salamatof-creek)).
+
+At the road crossing we observed a culvert passage for Salamatof Creek below the highway, but no flowing water. The visible nearby body of water at this location appeared to be lotic in nature, and no outflow was readily evident.
+
+```{r salamatof-creek, echo = F, fig.cap = "Salamatof Creek drainange, North of Kenai, Alaska. Red X indicates location of fish passage barrier."}
+
+knitr::include_graphics('images/Inkedsalamatof_map.jpg')
+
+```
+
+Based on observations at the road crossing, it is possible that historical construction activities altered the flow path of Salamatof Creek such that it no longer connects to Cook Inlet except at very high flow volumes. A review traditional knowledge in this area could help reveal if this watershed may have previously been an anadromous waterbody. Additionally, a review of historical aerial imagery could reveal how channel path or lake acreage extent may have changed in recent decades.
+
 <br>
+
+#### 2021 Outreach and other activities
+
+In addition to fieldwork efforts aimed at prospecting for unidentified anadromous waters, having personnel mobilized and trained in juvenile fish identification and capture methods allowed for support in two additional efforts:
+
+-   **Education**. In 2021 KWF oversaw 12 fish sampling events aimed exclusively at education and outreach, occurring primarily at Lower Soldotna Creek. These events introduced basic facts about wild salmon life history and habitat to local community members, visitors, journalists, and summer campers. Total participants is estimated in excess of one hundred people.
+
+-   **Culvert replacement**. In summer 2021 KWF oversaw construction activities to replace the culvert carrying the North Fork of the Anchor River underneath Niklovaesk road in the Anchor Point area. As part of these efforts, a small segment of river channel is temporarily de-watered thus fish in this segment must be captured and released downstream prior. KWF personnel was able to capture n = 329 juvenile fish as part of these fish rescue efforts.
+
 
 ## 2022 Fieldwork
 
@@ -69,7 +87,7 @@ In one case, at the "Moose River Trib 1.4" site, the flow line indicated by the 
 
 These observations highlight the need for a more sophisticated mapping approach to generate survey sites for additional fieldwork. For additional discussion and a plan forward on this topic, see the "Next Steps" chapter.
 
-## Media highlights
+## 2022 Media highlights
 
 KDLL Public Radio joined one group of volunteers on August 27, 2022 and released a four-minute story on September 2, 2022. The story also reached state-wide audiences on Alaska News Nightly. See Figure \@ref(fig:radio-story) for the story.
 
